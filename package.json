@@ -13,7 +13,17 @@
     "build:design-system": "pnpm --filter @fintual/design-system build",
     "clean": "pnpm -r exec rm -rf node_modules dist build",
     "test": "pnpm -r test",
-    "lint": "pnpm -r lint"
+    "lint": "pnpm -r lint",
+    "ds:start": "pnpm --filter fintual-ds start",
+    "ds:android": "pnpm --filter fintual-ds android",
+    "ds:ios": "pnpm --filter fintual-ds ios",
+    "ds:web": "pnpm --filter fintual-ds web",
+    "ds:storybook": "pnpm --filter fintual-ds storybook",
+    "ds:storybook:web": "pnpm --filter fintual-ds storybook:web",
+    "ds:storybook:ios": "pnpm --filter fintual-ds storybook:ios",
+    "ds:storybook:android": "pnpm --filter fintual-ds storybook:android",
+    "ds:storybook:generate": "pnpm --filter fintual-ds storybook-generate",
+    "ds:build-storybook": "pnpm --filter fintual-ds build-storybook"
   },
   "keywords": [
     "monorepo",
