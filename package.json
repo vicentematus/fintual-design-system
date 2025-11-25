@@ -27,7 +27,9 @@
     "ds:publish": "pnpm --filter fintual-ui publish",
     "mobile:start": "pnpm --filter mobile start",
     "mobile:ios": "pnpm --filter mobile ios",
-    "mobile:web": "pnpm --filter mobile web"
+    "mobile:web": "pnpm --filter mobile web",
+    "web:dev": "pnpm --filter web dev",
+    "web:build": "pnpm --filter web build"
   },
   "keywords": [
     "monorepo",
