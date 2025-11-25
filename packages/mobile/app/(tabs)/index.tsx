@@ -6,6 +6,7 @@ import ParallaxScrollView from "@/components/parallax-scroll-view";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 import { Link } from "expo-router";
+import { Heading, Text } from "fintual-ui";
 
 export default function HomeScreen() {
   return (
@@ -19,7 +20,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Hola!</ThemedText>
+        <Text>Hola soy texto de algo especial de Fintual!</Text>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step asdsd1: Try it</ThemedText>
