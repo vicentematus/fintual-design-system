@@ -1,6 +1,6 @@
 {
   "name": "fintual-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -49,10 +49,9 @@
     "build:js": "tsc --project tsconfig.build.json --outDir dist --module commonjs",
     "build:esm": "tsc --project tsconfig.build.json --outDir dist/temp-esm --module esnext && node scripts/rename-esm.js",
     "build": "pnpm clean && pnpm build:types && pnpm build:js && pnpm build:esm",
-    "prepublishOnly": "pnpm build",
-    "test:pack": "pnpm build && npm pack",
+    "prepublish": "pnpm build",
     "bump": "pnpm version patch",
-    "publish": "pnpm build && npm publish --access public"
+    "publish": "pnpm publish --access public"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.2.6",
