@@ -1,0 +1,29 @@
+# Development files
+.storybook/
+.rnstorybook/
+stories/
+app/
+scripts/
+
+# Build artifacts
+*.tsbuildinfo
+dist/temp-esm/
+
+# Development configs
+.expo/
+.expo-shared/
+metro.config.js
+babel.config.js
+
+# Tests
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+**/*.stories.tsx
+**/*.stories.ts
+
+# Other
+.DS_Store
+*.log
+node_modules/
