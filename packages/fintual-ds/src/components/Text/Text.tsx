@@ -2,6 +2,7 @@ import type { StyleProp, TextStyle } from "react-native";
 import { Text as RNText, StyleSheet } from "react-native";
 import { useTheme } from "../../theme";
 import { typography } from "../../tokens";
+import type { TextColor } from "../../tokens";
 
 export interface TextProps {
   size?:
@@ -14,7 +15,7 @@ export interface TextProps {
     | "text-xxxl";
   weight?: "regular" | "medium" | "semibold" | "bold";
   children: React.ReactNode;
-  color?: string;
+  color?: TextColor;
   style?: StyleProp<TextStyle>;
 }
 
@@ -27,7 +28,7 @@ export const Text = ({
 }: TextProps) => {
   const theme = useTheme();
   const { text } = theme;
-  const finalColor = color || text.primary;
+  const finalColor = color ? text[color] : text.primary;
 
   return (
     <RNText

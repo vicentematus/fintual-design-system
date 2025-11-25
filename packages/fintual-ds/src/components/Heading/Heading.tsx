@@ -2,17 +2,18 @@ import type { StyleProp, TextStyle } from 'react-native';
 import { StyleSheet, Text } from 'react-native';
 import { typography } from '../../tokens';
 import { useTheme } from '../../theme';
+import type { TextColor } from '../../tokens';
 
 export interface HeadingProps {
   size?: 'text-xs' | 'text-sm' | 'text-md' | 'text-lg' | 'text-xl' | 'text-xxl' | 'text-xxxl';
   children: React.ReactNode;
-  color?: string;
+  color?: TextColor;
   style?: StyleProp<TextStyle>;
 }
 
 export const Heading = ({ size = 'text-xl', children, color, style }: HeadingProps) => {
   const theme = useTheme();
-  const finalColor = color || theme.text.primary;
+  const finalColor = color ? theme.text[color] : theme.text.primary;
 
   return (
     <Text accessibilityRole="header" style={[styles.base, textStyles[size], { color: finalColor }, style]}>

@@ -13,6 +13,10 @@ const meta = {
       control: "select",
       options: ["regular", "medium", "semibold", "bold"],
     },
+    color: {
+      control: "select",
+      options: ["primary", "secondary", "tertiary", "inverse"],
+    },
   },
 } satisfies Meta<typeof Text>;
 
@@ -66,5 +70,33 @@ export const LargeBold: Story = {
     size: "text-lg",
     weight: "bold",
     children: "Large bold text combining size and weight",
+  },
+};
+
+export const ColorPrimary: Story = {
+  args: {
+    children: "Primary color text",
+    color: "primary",
+  },
+};
+
+export const ColorSecondary: Story = {
+  args: {
+    children: "Secondary color text",
+    color: "secondary",
+  },
+};
+
+export const ColorTertiary: Story = {
+  args: {
+    children: "Tertiary color text",
+    color: "tertiary",
+  },
+};
+
+export const ColorInverse: Story = {
+  args: {
+    children: "Inverse color text",
+    color: "inverse",
   },
 };

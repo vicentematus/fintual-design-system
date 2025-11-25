@@ -17,6 +17,10 @@ const meta = {
         "text-xxxl",
       ],
     },
+    color: {
+      control: "select",
+      options: ["primary", "secondary", "tertiary", "inverse"],
+    },
   },
 } satisfies Meta<typeof Heading>;
 
@@ -69,5 +73,33 @@ export const ExtraSmall: Story = {
   args: {
     size: "text-xs",
     children: "Extra Small Heading",
+  },
+};
+
+export const ColorPrimary: Story = {
+  args: {
+    children: "Primary color heading",
+    color: "primary",
+  },
+};
+
+export const ColorSecondary: Story = {
+  args: {
+    children: "Secondary color heading",
+    color: "secondary",
+  },
+};
+
+export const ColorTertiary: Story = {
+  args: {
+    children: "Tertiary color heading",
+    color: "tertiary",
+  },
+};
+
+export const ColorInverse: Story = {
+  args: {
+    children: "Inverse color heading",
+    color: "inverse",
   },
 };

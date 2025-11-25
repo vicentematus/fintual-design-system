@@ -52,7 +52,7 @@
     "prepublishOnly": "pnpm build",
     "test:pack": "pnpm build && npm pack",
     "bump": "pnpm version patch",
-    "publish": "npm publish --access public"
+    "publish": "pnpm build && npm publish --access public"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.2.6",

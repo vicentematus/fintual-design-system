@@ -16,4 +16,4 @@ export { ThemeProvider, useTheme } from "./theme";
 
 // Design Tokens
 export { colors, spacing, typography, lightTheme, darkTheme } from "./tokens";
-export type { ColorTokens, SpacingTokens, TypographyTokens } from "./tokens";
+export type { ColorTokens, SpacingTokens, TypographyTokens, TextColor } from "./tokens";

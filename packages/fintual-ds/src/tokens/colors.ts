@@ -105,3 +105,5 @@ export const colors = {
 } as const;
 
 export type ColorTokens = typeof colors;
+
+export type TextColor = keyof typeof lightTheme.text;
