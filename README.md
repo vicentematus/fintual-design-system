@@ -28,8 +28,7 @@ pnpm create vite web-project --template react-ts
 Para utilizar React Native Web instalar:
 
 ```
-pnpm add react-native-web vite-plugin-rnw react-native
-
+pnpm add react-native-web vite-plugin-rnw react-native fintual-ui
 ```
 
 Ir a tu vite.config.ts y usar el plugin de react-native-web:
