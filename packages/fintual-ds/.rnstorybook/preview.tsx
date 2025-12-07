@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react-native";
 import { Platform, View } from "react-native";
 import { ThemeProvider } from "../src/theme/ThemeProvider";
-import { useTheme } from "../src/theme";
+import { useTheme } from "../src/theme/ThemeProvider";
 
 // fix for actions on web
 if (Platform.OS === "web") {

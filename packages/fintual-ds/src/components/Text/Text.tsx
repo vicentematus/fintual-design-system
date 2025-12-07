@@ -1,6 +1,6 @@
 import type { StyleProp, TextStyle } from "react-native";
 import { Text as RNText, StyleSheet } from "react-native";
-import { useTheme } from "../../theme";
+import { useTheme } from "../../theme/ThemeProvider";
 import { typography } from "../../tokens";
 import type { TextColor } from "../../tokens";
 

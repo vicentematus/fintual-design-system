@@ -1,8 +1,8 @@
 import type { StyleProp, TextStyle } from 'react-native';
 import { StyleSheet, Text } from 'react-native';
 import { typography } from '../../tokens';
-import { useTheme } from '../../theme';
 import type { TextColor } from '../../tokens';
+import { useTheme } from '../../theme/ThemeProvider';
 
 export interface HeadingProps {
   size?: 'text-xs' | 'text-sm' | 'text-md' | 'text-lg' | 'text-xl' | 'text-xxl' | 'text-xxxl';
