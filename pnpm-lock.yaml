@@ -13,19 +13,64 @@ importers:
   .: {}
 
   packages/fintual-ds:
-    dependencies:
-      '@gorhom/bottom-sheet':
-        specifier: ^5.2.6
-        version: 5.2.8(@types/react@19.1.17)(react-native-gesture-handler@2.28.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native-reanimated@4.1.6(@babel/core@7.28.5)(react-native-worklets@0.5.1(@babel/core@7.28.5)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
+    devDependencies:
+      '@babel/core':
+        specifier: ^7.24.0
+        version: 7.28.5
+      '@babel/plugin-transform-class-static-block':
+        specifier: ^7.27.1
+        version: 7.28.3(@babel/core@7.28.5)
+      '@babel/preset-env':
+        specifier: ^7.25.4
+        version: 7.28.5(@babel/core@7.28.5)
+      '@chromatic-com/storybook':
+        specifier: ^4.0.0
+        version: 4.1.3(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@expo/metro-runtime':
+        specifier: ~6.1.2
+        version: 6.1.2(expo@54.0.27)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
       '@react-native-async-storage/async-storage':
         specifier: 2.2.0
         version: 2.2.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))
-      '@react-native-community/datetimepicker':
-        specifier: 8.4.4
-        version: 8.4.4(expo@54.0.27)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-      '@react-native-community/slider':
-        specifier: 5.0.1
-        version: 5.0.1
+      '@storybook/addon-docs':
+        specifier: ^10.0.0
+        version: 10.1.4(@types/react@19.1.17)(esbuild@0.27.1)(rollup@4.53.3)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.2.7(@types/node@24.10.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.2))
+      '@storybook/addon-ondevice-actions':
+        specifier: ^10.0.0
+        version: 10.1.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@storybook/addon-ondevice-backgrounds':
+        specifier: ^10.0.0
+        version: 10.1.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@storybook/addon-ondevice-controls':
+        specifier: ^10.0.0
+        version: 10.1.0(@gorhom/bottom-sheet@5.2.8(@types/react@19.1.17)(react-native-gesture-handler@2.28.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native-reanimated@4.1.6(@babel/core@7.28.5)(react-native-worklets@0.5.1(@babel/core@7.28.5)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(@react-native-community/datetimepicker@8.4.4(expo@54.0.27)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(@react-native-community/slider@5.0.1)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3)
+      '@storybook/addon-ondevice-notes':
+        specifier: ^10.0.0
+        version: 10.1.0(@storybook/react@10.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@storybook/addon-themes':
+        specifier: ^10.0.8
+        version: 10.1.4(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
+      '@storybook/react':
+        specifier: ^10.0.0
+        version: 10.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3)
+      '@storybook/react-native':
+        specifier: ^10.0.0
+        version: 10.1.0(41f7d36328d78afdc706e5b9309f8dac)
+      '@storybook/react-native-web-vite':
+        specifier: ^10.0.0
+        version: 10.1.4(esbuild@0.27.1)(react-dom@19.1.0(react@19.1.0))(react-native-web@0.21.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(rollup@4.53.3)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.2))
+      '@types/react':
+        specifier: ~19.1.0
+        version: 19.1.17
+      babel-plugin-react-docgen-typescript:
+        specifier: ^1.5.1
+        version: 1.5.1(@babel/core@7.28.5)(typescript@5.9.3)
+      chromatic:
+        specifier: ^13.3.4
+        version: 13.3.4
+      cross-env:
+        specifier: ^10.0.0
+        version: 10.1.0
       expo:
         specifier: ^54.0.20
         version: 54.0.27(@babel/core@7.28.5)(@expo/metro-runtime@6.1.2)(expo-router@6.0.17)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
@@ -74,61 +119,6 @@ importers:
       react-native-worklets:
         specifier: 0.5.1
         version: 0.5.1(@babel/core@7.28.5)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-    devDependencies:
-      '@babel/core':
-        specifier: ^7.24.0
-        version: 7.28.5
-      '@babel/plugin-transform-class-static-block':
-        specifier: ^7.27.1
-        version: 7.28.3(@babel/core@7.28.5)
-      '@babel/preset-env':
-        specifier: ^7.25.4
-        version: 7.28.5(@babel/core@7.28.5)
-      '@chromatic-com/storybook':
-        specifier: ^4.0.0
-        version: 4.1.3(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@expo/metro-runtime':
-        specifier: ~6.1.2
-        version: 6.1.2(expo@54.0.27)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)
-      '@storybook/addon-docs':
-        specifier: ^10.0.0
-        version: 10.1.4(@types/react@19.1.17)(esbuild@0.27.1)(rollup@4.53.3)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.2.7(@types/node@24.10.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.2))
-      '@storybook/addon-ondevice-actions':
-        specifier: ^10.0.0
-        version: 10.1.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@storybook/addon-ondevice-backgrounds':
-        specifier: ^10.0.0
-        version: 10.1.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@storybook/addon-ondevice-controls':
-        specifier: ^10.0.0
-        version: 10.1.0(@gorhom/bottom-sheet@5.2.8(@types/react@19.1.17)(react-native-gesture-handler@2.28.0(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native-reanimated@4.1.6(@babel/core@7.28.5)(react-native-worklets@0.5.1(@babel/core@7.28.5)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(@react-native-community/datetimepicker@8.4.4(expo@54.0.27)(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0))(@react-native-community/slider@5.0.1)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3)
-      '@storybook/addon-ondevice-notes':
-        specifier: ^10.0.0
-        version: 10.1.0(@storybook/react@10.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@storybook/addon-themes':
-        specifier: ^10.0.8
-        version: 10.1.4(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@storybook/react':
-        specifier: ^10.0.0
-        version: 10.1.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3)
-      '@storybook/react-native':
-        specifier: ^10.0.0
-        version: 10.1.0(41f7d36328d78afdc706e5b9309f8dac)
-      '@storybook/react-native-web-vite':
-        specifier: ^10.0.0
-        version: 10.1.4(esbuild@0.27.1)(react-dom@19.1.0(react@19.1.0))(react-native-web@0.21.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(rollup@4.53.3)(storybook@10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.9.3)(vite@7.2.7(@types/node@24.10.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.2))
-      '@types/react':
-        specifier: ~19.1.0
-        version: 19.1.17
-      babel-plugin-react-docgen-typescript:
-        specifier: ^1.5.1
-        version: 1.5.1(@babel/core@7.28.5)(typescript@5.9.3)
-      chromatic:
-        specifier: ^13.3.4
-        version: 13.3.4
-      cross-env:
-        specifier: ^10.0.0
-        version: 10.1.0
       storybook:
         specifier: ^10.0.0
         version: 10.1.4(@testing-library/dom@10.4.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
