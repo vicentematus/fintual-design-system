@@ -2,7 +2,7 @@
 
 - React >= 19.0.0
 - React-Native-Web>=0.19.0
-- pnpm 9.9.0
+- pnpm 10
 - node v23.9.0
 
 ## Instalacion
